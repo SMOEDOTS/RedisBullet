@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 2
-  m_SendInterval: 0.06666667
+  m_SendInterval: 0.04761905
   m_SyncRotationAxis: 3
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   bulletSpawn: {fileID: 4963207712805444}
   bulletSpeed: 6
   tsprite: {fileID: 21300000, guid: b55ad8f94d383954f93e71461f361835, type: 3}
+  bsprite: {fileID: 21300000, guid: e8c8d929794e56f4fb3c066b563d96f3, type: 3}
 --- !u!212 &212900296762273866
 SpriteRenderer:
   m_ObjectHideFlags: 1

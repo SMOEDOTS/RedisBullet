@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4792476472177144}
-  - component: {fileID: 212910799054888676}
   - component: {fileID: 50351301783316358}
   - component: {fileID: 58940177691073316}
   - component: {fileID: 114684737768560232}
   - component: {fileID: 114459524334399116}
+  - component: {fileID: 212736419074691604}
   m_Layer: 8
   m_Name: bullet
   m_TagString: Untagged
@@ -72,13 +72,13 @@ CircleCollider2D:
   m_GameObject: {fileID: 1438542696164044}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1e05c1e099c59ad4bbb608e19853a020, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.26
 --- !u!114 &114459524334399116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
     i15: 120
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!212 &212910799054888676
+--- !u!212 &212736419074691604
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -12,9 +12,10 @@ public class PlayerController : NetworkBehaviour {
     public Transform bulletSpawn;
     public int bulletSpeed;
     public Sprite tsprite;
+    public Sprite bsprite;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -123,7 +124,7 @@ public class PlayerController : NetworkBehaviour {
             bulletSpawn.rotation);
 
         bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-
+        bullet.GetComponent<SpriteRenderer>().sprite = bsprite;
         Destroy(bullet, 2.0f);
 
         NetworkServer.Spawn(bullet);
