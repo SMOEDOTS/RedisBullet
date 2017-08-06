@@ -25,6 +25,12 @@ public class PlayerController : NetworkBehaviour {
 
     void Update()
     {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
+
         var mouse = Input.mousePosition;
         var screenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
         var offset = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
@@ -97,7 +103,7 @@ public class PlayerController : NetworkBehaviour {
             speedx = moveSpeed;
         }
 
-        if ((Input.GetMouseButton(0)) && (allowfire))
+        if ((Input.GetMouseButton(0)))
         {
             CmdFire1();
         }
@@ -106,6 +112,10 @@ public class PlayerController : NetworkBehaviour {
     [Command]
     void CmdFire1()
     {
+        if (!allowfire)
+        {
+            return;
+        }
         allowfire = false;
         var bullet = (GameObject)Instantiate(
             bulletPrefab,
